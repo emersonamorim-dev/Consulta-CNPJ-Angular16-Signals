@@ -4,9 +4,9 @@
       <div class="uppercase tracking-wide text-lg text-indigo-500 font-bold mb-4">Consultar CNPJ - Angular Signals</div>
       
       <div class="relative">
-           <input #searchBox id="search-box" type="number" (input)="buscaCnpj.set(searchBox.value)"
+        <input #searchBox id="search-box" type="number" (input)="limitCnpjLength($event); buscaCnpj.set(searchBox.value)"
         class="mt-1 block w-full py-2 px-3 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-        placeholder="Digite o CNPJ" maxlength="14">
+        placeholder="Digite o CNPJ">
 
         <div *ngIf="isValidCnpj && buscaCnpj()" class="absolute inset-y-0 right-0 pr-3 flex items-center text-green-500">
           <i class="fas fa-check-circle"></i> 

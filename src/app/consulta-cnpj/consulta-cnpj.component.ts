@@ -37,13 +37,20 @@ export class ConsultaCnpjComponent implements OnInit {
   );
   
   cnpj = fromObservable(this.cnpj$, {} as CnpjInfo);
-  
+
+  public limitCnpjLength(event: Event): void {
+  const inputElement = event.target as HTMLInputElement;
+  const value: string = inputElement.value.replace(/[^\d]+/g, '');
+  if (value.length > 14) {
+    inputElement.value = value.substring(0, 14);
+  }
+}
+
   public checkCnpjValidity(cnpj: string): boolean {
     const cleanCnpj = cnpj.replace(/[^\d]+/g, '');
     if (cleanCnpj.length !== 14) {
       return false;
     }
-  
     return true;
   }
 }

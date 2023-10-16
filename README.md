@@ -1,4 +1,4 @@
-## Consulta-CNPJ-Angular-Signals - Angular 16 Signals 🚀 🔄 🌐 
+## Consulta-CNPJ-Angular-Signals - Angular 16 Signals 🚀 🔄 🌐  
 
 Codificação de aplicação Angular 16 com Signals usa uma forma avançada de programação reativa muito mais rápida. O frontend moderno com uso de TailwindCSS para deixar estilização da interface responsiva para todos tipos de telas. Uso de programação reativa para consultar informações de CNPJ. Utiliza o Angular, um framework popular para construir aplicações SPA (Single Page Application), e Signals para tornar a aplicação mais reativa e eficiente.
 A aplicação consome uma um Backend em NodeJS que realiza todo processo para acesso ao Endpoint e retornar os dados para Frontend em Angular.
